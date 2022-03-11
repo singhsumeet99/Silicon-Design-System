@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Rflex-bold";
+  src: url("fonts/RFlexBold-VGzLZ.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Rflex";
+  src: url("fonts/RFlexRegular-JRJ8j.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+:root {
+  --color-text: #fff;
+  --color-primary: linear-gradient(
+    180deg,
+    #5561ff 0%,
+    #3643fc 100%,
+    #3643fc 100%
+  );
+  --color-secondary: rgba(255, 255, 255, 0.1);
+  --color-primary-hover: linear-gradient(180deg, #6b75ff 0%, #535fff 100%);
+  --color-primary-active: linear-gradient(180deg, #4b4fa0 0%, #44488b 100%);
+  --color-secondary-hover: linear-gradient(180deg, #b9bcd9 0%, #989bc1 100%);
+  --color-secondary-active: linear-gradient(180deg, #4f5275 0%, #45475a 100%);
+  --color-ghost: #323347;
+  --color-tertiary: #323347;
+  --color-tertiary-hover: #3b3b52;
+  --color-tertiary-active: #272836;
+  --color-primary-long: linear-gradient(
+    180deg,
+    #5561ff 0%,
+    #3643fc 100%,
+    #3643fc 100%
+  );
+  --border-radius: 12px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #323347;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 6rem 10rem;
+}
+
+/* Typography */
+
+h1 {
+  color: var(--color-text);
+  font-family: "Rflex-bold", "Open Sans", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 76.8px;
+}
+
+/* Grids */
+.grid {
+  display: grid;
+  grid-template-rows: repeat(3, 250px);
+  grid-template-columns: repeat(4, 250px);
+}
+
+/* Buttons */
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.btn {
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  cursor: pointer;
+  height: 48px;
+  width: 186px;
+  border: 0;
+  outline: 0;
+  white-space: nowrap;
+  transition: ease-out all 150ms;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+  box-shadow: 2px 8px 20px #111;
+}
+
+.btn--primary:active {
+  background: var(--color-primary-active);
+  box-shadow: none;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+}
+
+.btn--secondary:hover {
+  background: var(--color-secondary-hover);
+  box-shadow: 2px 8px 20px #111;
+}
+
+.btn--secondary:active {
+  background: var(--color-secondary-active);
+  box-shadow: none;
+}
+.btn--ghost {
+  background: var(--color-ghost);
+  border: 3px solid #6e7198;
+}
+.btn--ghost:hover {
+  border: 3px solid #b9bcd9;
+}
+.btn--ghost:active {
+  border: 3px solid #4f5275;
+}
+.btn--tertiary {
+  background: var(--color-tertiary);
+}
+.btn--tertiary:hover {
+  background: var(--color-tertiary-hover);
+  box-shadow: 2px 8px 20px #111;
+}
+.btn--tertiary:active {
+  background: var(--color-tertiary-active);
+}
+
+.btn--tall {
+  background: var(--color-secondary);
+  height: 224px;
+  width: 186px;
+}
+.btn--tall:hover {
+  box-shadow: 2px 8px 20px #111;
+}
+
+.btn--tall:active {
+  box-shadow: none;
+}
+
+.btn--primary-long {
+  height: 48px;
+  width: 392px;
+}
+
+.btn--circle {
+  background: var(--color-secondary);
+  border-radius: 36px;
+  height: 48px;
+  width: 48px;
+}
+.btn--circle:hover {
+  border: 3px solid #b9bcd9;
+}
+
+.btn--secondary-long {
+  background: var(--color-secondary);
+  height: 48px;
+  width: 324px;
+}
+.btn--secondary-long:hover {
+  border: 3px solid #b9bcd9;
+}
+
+.btn--icon {
+  text-align: center;
+}
+.btn--icon > img,
+.btn--icon > span {
+  vertical-align: middle;
+}
+.btn--icon > img {
+  margin-right: 5px;
+}
+
+/* Inputs */
+/* .input {
+  margin: 40px;
+} */
+
+.input {
+  background: var(--color-secondary);
+  border: 3px solid #b9bcd9;
+  border-radius: var(--border-radius);
+  color: #fff;
+  height: 48px;
+  width: 392px;
+  outline: 0;
+  white-space: nowrap;
+}
+.input::placeholder {
+  padding-left: 20px;
+}
+
+.input:hover::placeholder {
+  color: #fff;
+}
+.input:focus::placeholder {
+  opacity: 0;
+}
+
+.input--center::placeholder {
+  text-align: center;
+}
+
+.input--big {
+  height: 240px;
+  width: 392px;
+}
+
+label {
+  display: block;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+.hehe {
+  margin: 40px;
+}
