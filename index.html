@@ -19,7 +19,7 @@
       <div>
         <h1>Buttons</h1>
       </div>
-      <div class="grid">
+      <div class="hehe">
         <span>
           <a href="#"><button class="btn btn--primary">Press me!</button></a>
         </span>
@@ -83,13 +83,17 @@
       <div>
         <h1>Text Inputs</h1>
       </div>
-      <div>
+      <div class="hehe">
         <span>
           <input
-            class="input hehe"
+            class="input"
             type="text"
             placeholder="Look at this placeholder"
           />
+        </span>
+        <span class="input--icon">
+          <img src="images/search.svg" alt="search icon" />
+          <input type="text" placeholder="Look an icon!" />
         </span>
         <span>
           <input
@@ -107,5 +111,154 @@
         </span>
       </div>
     </section>
+
+    <section class="container">
+      <div>
+        <h1>Radios & Checkboxes</h1>
+      </div>
+      <div class="hehe">
+        <span>
+          <input type="radio" />
+        </span>
+        <span>
+          <input id="radio1" type="radio" />
+          <label for="radio1" class="label-inline">With a label</label>
+        </span>
+        <span>
+          <input type="checkbox" />
+        </span>
+        <span>
+          <input class="rc--icon" id="House_icon1" type="radio" />
+          <label for="House_icon1"
+            ><img src="images/house-door.svg" alt="House icon"
+          /></label>
+        </span>
+        <span class="radio-label-flex">
+          <input id="House_icon2" type="radio" />
+          <img src="images/house-door.svg" alt="house door icon" />
+          <p>With label and icon</p>
+        </span>
+        <span>
+          <input class="rc--icon" id="House_icon3" type="checkbox" />
+          <label for="House_icon3"
+            ><img src="images/house-door.svg" alt="House icon"
+          /></label>
+        </span>
+        <span class="radio-label-flex">
+          <input id="House_icon" type="checkbox" />
+          <img src="images/house-door.svg" alt="house door icon" />
+          <p>With label and icon</p>
+        </span>
+        <span>
+          <h3>This is a radio group</h3>
+          <div>
+            <input type="radio" id="Switch to me" name="Radio_group" />
+            <label class="grp-label" for="Switch to me">Switch to me</label>
+          </div>
+          <div>
+            <input type="radio" id="To me" name="Radio_group" />
+            <label class="grp-label" for="To me">To me</label>
+          </div>
+          <div>
+            <input type="radio" id="Or me" name="Radio_group" />
+            <label class="grp-label" for="Or me">Or me!</label>
+          </div>
+        </span>
+      </div>
+    </section>
+
+    <section class="container">
+      <div>
+        <h1>Chips</h1>
+      </div>
+      <div class="hehe">
+        <span>
+          <button type="menu" class="chip">Hi I’m called a chip!</button>
+        </span>
+        <span>
+          <button type="menu" class="chip chip--big">
+            Hi I’m called a chip!
+          </button>
+        </span>
+        <div>
+          <h3>This is a chip group</h3>
+          <span>
+            <button type="menu" class="chip chip--small">Imo</button>
+          </span>
+          <span>
+            <button type="menu" class="chip chip--small">Ludi</button>
+          </span>
+          <span>
+            <button type="menu" class="chip chip--small">Ndaru</button>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div>
+        <h1>Cards</h1>
+      </div>
+      <div class="hehe">
+        <div class="card">
+          <div class="text">
+            <h3>Hi I'm a card!</h3>
+            <p class="parra">I also have a body text</p>
+          </div>
+        </div>
+        <div class="card2">
+          <img src="images/ImageFrame1.svg" alt="building image" />
+          <div class="footer2">Oh look an image!</div>
+        </div>
+        <div class="card3">
+          <img src="images/ImageFrame2.svg" alt="Flower pots image" />
+          <div class="footer3">
+            Wow a button!
+            <button class="btn btn--primary">I'm a button!</button>
+          </div>
+        </div>
+        <div class="card4">
+          <img src="images/ImageFrame3.svg" alt="computer image" />
+          <div class="footer4">
+            <h3>This card has everything</h3>
+            <p>I have an image, title, body and even a button!</p>
+            <button class="btn btn--primary">I'm a button!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div>
+        <h1>Disclosures</h1>
+      </div>
+      <div class="hehe">
+        <div class="disclosure disclosure--expanded">
+          <div class="disclosure__heading">
+            <p>What is a disclosure?</p>
+            <img
+              class="disclosure__icon"
+              src="images/toggler.svg"
+              alt="toggler"
+            />
+          </div>
+          <div class="disclosure__content">
+            <p>
+              A simple, accessible foundation for building custom UIs that show
+              and hide content, like togglable accordion panels.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const disclosures = document.querySelectorAll(".disclosure");
+      disclosures.forEach((item) =>
+        item.addEventListener("click", function () {
+          this.classList.toggle("disclosure--expanded");
+        })
+      );
+    </script>
   </body>
 </html>
