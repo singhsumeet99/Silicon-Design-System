@@ -249,9 +249,193 @@
             </p>
           </div>
         </div>
+        <div class="disclosure">
+          <div class="disclosure__heading">
+            <p>I'm closed!</p>
+            <img
+              class="disclosure__icon"
+              src="images/toggler.svg"
+              alt="toggler"
+            />
+          </div>
+          <div class="disclosure__content">
+            <p>
+              A simple, accessible foundation for building custom UIs that show
+              and hide content, like togglable accordion panels.
+            </p>
+          </div>
+        </div>
+
+        <div class="accord">
+          <div class="disclosure">
+            <div class="disclosure__heading">
+              <p>You can also make accordians!</p>
+              <img
+                class="disclosure__icon"
+                src="images/toggler.svg"
+                alt="toggler"
+              />
+            </div>
+            <div class="disclosure__content">
+              <p>
+                Make sure you use auto layouts to get that cool expanding
+                effect!
+              </p>
+            </div>
+          </div>
+          <div class="disclosure">
+            <div class="disclosure__heading">
+              <p>I’m part of the accordian</p>
+              <img
+                class="disclosure__icon"
+                src="images/toggler.svg"
+                alt="toggler"
+              />
+            </div>
+            <div class="disclosure__content">
+              <p>
+                An accordion is a vertically stacked group of collapsible
+                sections.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <section class="container">
+      <div>
+        <h1>Dropdowns</h1>
+      </div>
+      <div class="hehe">
+        <div class="dropdown-menu">
+          <button class="drop--btn">Dropdown</button>
+          <div class="dropdown-menu__content">
+            <a href="#">Label 1</a>
+            <a href="#">Label 2</a>
+            <a href="#">Label 3</a>
+          </div>
+        </div>
+        <div>
+          <select class="dropdown" name="" id="">
+            <option value="">Label 1</option>
+            <option value="">Label 2</option>
+            <option value="">Label 3</option>
+            <option value="">Label 4</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div>
+        <h1>File Inputs</h1>
+      </div>
+      <div class="hehe--file">
+        <div class="file">
+          <img src="images/Upload_Illustration.svg" alt="upload file" />
+          <p>You can click me to upload files!</p>
+          <p class="file__p">secondary message</p>
+        </div>
+        <div class="file file--uploaded">
+          <span class="file__flex">
+            <img src="images/uploaded.svg" alt="file uploaded" />
+            <span class="delete">
+              <img src="images/delete_icon.svg" alt="delete icon" />
+            </span>
+          </span>
+          <p class="file__p1">File uploaded!</p>
+          <span class="file__flex">
+            <img src="images/file-zip.svg" alt="zip file icon" />
+            <p class="file__p2">file.zip</p>
+          </span>
+        </div>
+
+        <div class="file file--mobile">
+          <img src="images/Upload_Illustration.svg" alt="upload file" />
+          <p>I'm a mobile-friendly version!</p>
+          <p class="file__p">Tap me to upload</p>
+        </div>
+
+        <div class="file file--mobile file--uploaded">
+          <span class="file__flex">
+            <img src="images/uploaded.svg" alt="file uploaded" />
+            <span class="delete">
+              <img src="images/delete_icon.svg" alt="delete icon" />
+            </span>
+          </span>
+          <p class="file__p1">File uploaded!</p>
+          <span class="file__flex">
+            <img src="images/file-zip.svg" alt="zip file icon" />
+            <p class="file__p2">file.zip</p>
+          </span>
+        </div>
+
+        <div class="file">
+          <img src="images/Upload_Illustration.svg" alt="upload file" />
+          <p>You can click me to upload files!</p>
+          <p class="file__p">secondary message</p>
+          <span class="file__flex">
+            <img src="images/line.svg" alt="horizontal line" />
+            <p class="file__p">or</p>
+            <img src="images/line.svg" alt="horizontal line" />
+          </span>
+          <p class="file__p">you can also paste a Google Drive link!</p>
+          <span class="file__flex">
+            <input class="input" type="text" placeholder="Google Drive link" />
+            <button class="btn btn--primary btn--icon">
+              <img src="images/save.svg" alt="save icon" />
+            </button>
+          </span>
+        </div>
+
+        <div class="file file--uploaded file--link-uploaded">
+          <span class="file__flex">
+            <img src="images/uploaded.svg" alt="file uploaded" />
+            <span class="delete">
+              <img src="images/delete_icon.svg" alt="delete icon" />
+            </span>
+          </span>
+          <p class="file__p1">Link uploaded!</p>
+          <span class="file__flex">
+            <img src="images/drive_link.svg" alt="zip file icon" />
+            <p class="file__p2">drive.google.com/drive/u/0/folders/b00B5</p>
+          </span>
+        </div>
+
+        <div class="file file--mobile">
+          <img src="images/Upload_Illustration.svg" alt="upload file" />
+          <p>I'm a mobile-friendly version!</p>
+          <p class="file__p">Tap me to upload</p>
+          <span class="file__flex">
+            <img src="images/line_small.svg" alt="horizontal line" />
+            <p class="file__p">and</p>
+            <img src="images/line_small.svg" alt="horizontal line" />
+          </span>
+          <p class="file__p">here’s the variant that accepts GDrive links</p>
+          <span class="file__flex">
+            <input class="input" type="text" placeholder="Google Drive link" />
+            <button class="btn btn--primary btn--icon">
+              <img src="images/save.svg" alt="save icon" />
+            </button>
+          </span>
+        </div>
+
+        <div class="file file--mobile file--uploaded file--link-uploaded">
+          <span class="file__flex">
+            <img src="images/uploaded.svg" alt="file uploaded" />
+            <span class="delete">
+              <img src="images/delete_icon.svg" alt="delete icon" />
+            </span>
+          </span>
+          <p class="file__p1">Link uploaded!</p>
+          <span class="file__flex">
+            <img src="images/drive_link.svg" alt="zip file icon" />
+            <p class="file__p2">drive.google.com/drive/u/0/folders/b00B5</p>
+          </span>
+        </div>
+      </div>
+    </section>
     <script>
       const disclosures = document.querySelectorAll(".disclosure");
       disclosures.forEach((item) =>
