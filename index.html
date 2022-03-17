@@ -436,6 +436,220 @@
         </div>
       </div>
     </section>
+
+    <section class="container">
+      <div>
+        <h1>Modals</h1>
+      </div>
+      <div class="hehe">
+        <div class="modal-container">
+          <button
+            onclick="document.getElementById('id01').style.display='block'"
+            class="btn btn--primary"
+          >
+            Basic modal
+          </button>
+          <div id="id01" class="modal">
+            <div class="modal__img">
+              <img src="images/modal_tick.svg" alt="tick icon" />
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="modal__close"
+                >&times;</span
+              >
+            </div>
+            <div class="modal__content">
+              <h3>Hi I'm a modal</h3>
+              <p>
+                I have a basic icon, heading, and body text. I have no buttons
+                or a close button so press outside the modal to close!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-container">
+          <button
+            onclick="document.getElementById('id02').style.display='block'"
+            class="btn btn--primary"
+          >
+            With a close button
+          </button>
+          <div id="id02" class="modal modal--with-button">
+            <div class="modal__img">
+              <img src="images/modal_tick.svg" alt="tick icon" />
+              <span
+                onclick="document.getElementById('id02').style.display='none'"
+                class="modal__close"
+                >&times;</span
+              >
+            </div>
+            <div class="modal__content">
+              <h3>Wow a button!</h3>
+              <p>
+                This modal has a basic button to initiate an action within a
+                modal.
+              </p>
+            </div>
+            <button
+              onclick="document.getElementById('id02').style.display='none'"
+              class="btn btn--primary"
+            >
+              You can press me!
+            </button>
+          </div>
+        </div>
+
+        <div class="modal-container">
+          <button
+            onclick="document.getElementById('id03').style.display='block'"
+            class="btn btn--primary"
+          >
+            With an image
+          </button>
+          <div id="id03" class="modal modal--with-image">
+            <div class="modal__img">
+              <img src="images/modal_search_icon.svg" alt="search image icon" />
+              <span
+                onclick="document.getElementById('id03').style.display='none'"
+                class="modal__close"
+                >&times;</span
+              >
+            </div>
+            <div class="modal__content">
+              <h3>I have an image!</h3>
+              <p>
+                Modals can also have images to illustrate your point more
+                clearly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-container">
+          <button
+            onclick="document.getElementById('id04').style.display='block'"
+            class="btn btn--primary"
+          >
+            With 2 buttons
+          </button>
+          <div id="id04" class="modal modal--with-2buttons">
+            <div class="modal__img">
+              <img src="images/modal_tick.svg" alt="tick icon" />
+              <span
+                onclick="document.getElementById('id04').style.display='none'"
+                class="modal__close"
+                >&times;</span
+              >
+            </div>
+            <div class="modal__content">
+              <h3>Wow 2 buttons!</h3>
+              <p>
+                You can also have 2 buttons if you want a primary and secondary
+                action.
+              </p>
+            </div>
+            <div class="modal__flex">
+              <button
+                onclick="document.getElementById('id04').style.display='none'"
+                class="btn btn--secondary"
+              >
+                Cancel
+              </button>
+              <button
+                onclick="document.getElementById('id04').style.display='none'"
+                class="btn btn--primary"
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-container">
+          <button
+            onclick="document.getElementById('id05').style.display='block'"
+            class="btn btn--primary"
+          >
+            Wide boy
+          </button>
+          <div id="id05" class="modal modal--wide">
+            <div class="modal--wide__flex">
+              <div class="modal__img">
+                <img src="images/modal_tick.svg" alt="tick icon" />
+                <span
+                  onclick="document.getElementById('id05').style.display='none'"
+                  class="modal__close"
+                  >&times;</span
+                >
+              </div>
+              <div class="modal__content">
+                <h3>I’m a wide modal!</h3>
+                <p>
+                  You can use me whenever you need to write a longer message
+                  within the body!
+                </p>
+              </div>
+            </div>
+            <div class="modal__flex">
+              <button
+                onclick="document.getElementById('id05').style.display='none'"
+                class="btn btn--secondary"
+              >
+                Cancel
+              </button>
+              <button
+                onclick="document.getElementById('id05').style.display='none'"
+                class="btn btn--primary"
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-container">
+          <button
+            onclick="document.getElementById('id06').style.display='block'"
+            class="btn btn--primary"
+          >
+            Mobile modals!
+          </button>
+          <div id="id06" class="modal modal--mobile">
+            <div class="modal__img">
+              <img src="images/modal_tick.svg" alt="tick icon" />
+              <span
+                onclick="document.getElementById('id06').style.display='none'"
+                class="modal__close"
+                >&times;</span
+              >
+            </div>
+            <div class="modal__content">
+              <h3>For mobile!</h3>
+              <p>I’m a bit smaller to fit mobile screens!</p>
+            </div>
+            <button
+              onclick="document.getElementById('id06').style.display='none'"
+              class="btn btn--primary"
+            >
+              Cool!
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div>
+        <h1>Tabs</h1>
+      </div>
+      <div class="hehe--tab">
+        <div class="tab">
+          <span class="scroller">I'm a tab!</span>
+          <span class="scrollerB">Now switch to me!!</span>
+        </div>
+      </div>
+    </section>
     <script>
       const disclosures = document.querySelectorAll(".disclosure");
       disclosures.forEach((item) =>
