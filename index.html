@@ -55,7 +55,7 @@
           >
         </span>
         <span>
-          <a href="#"><button class="btn btn--tall">I'm a tall!</button></a>
+          <a href="#"><button class="btn btn--tall">I'm a tall one!</button></a>
         </span>
         <span>
           <a href="#"
@@ -103,11 +103,29 @@
           />
         </span>
         <span>
-          <label for="lb">With a label!</label>
-          <input class="input" type="text" id="lb" placeholder="Placeholder" />
+          <label for="BigBoy">I'm a big boy</label>
+          <textarea
+            name=""
+            id="BigBoy"
+            cols="40"
+            rows="10"
+            placeholder="Used for larger inputs"
+          ></textarea>
         </span>
         <span>
-          <input class="input" type="text" oninvalid="" />
+          <label for="place-label">With a label!</label>
+          <input
+            class="input"
+            id="place-label"
+            type="text"
+            placeholder="Placeholder"
+          />
+        </span>
+        <span>
+          <input class="input input--error" type="text" id="lb" autofocus />
+          <label class="input--error__label" for="lb"
+            >Oh no here's an error message!</label
+          >
         </span>
       </div>
     </section>
@@ -644,9 +662,136 @@
         <h1>Tabs</h1>
       </div>
       <div class="hehe--tab">
-        <div class="tab">
-          <span class="scroller">I'm a tab!</span>
-          <span class="scrollerB">Now switch to me!!</span>
+        <div class="tabs-container">
+          <div class="tabs">
+            <input type="radio" id="radio-1" name="tabs" checked />
+            <label class="tab" for="radio-1">I'm a tab!</label>
+            <input type="radio" id="radio-2" name="tabs" />
+            <label class="tab" for="radio-2">Now switch to me!!</label>
+            <span class="glider"></span>
+          </div>
+        </div>
+
+        <div class="tabs-container">
+          <div class="tabs tabs--with-icon">
+            <input type="radio" id="radio-i1" name="tabs" checked />
+            <label class="tab" for="radio-i1"
+              ><span
+                ><img
+                  class="rc--icon"
+                  src="images/house-door.svg"
+                  alt="house icon" /></span
+              >I can also have icons</label
+            >
+            <input type="radio" id="radio-i2" name="tabs" />
+            <label class="tab" for="radio-i2"
+              ><span
+                ><img
+                  class="rc--icon"
+                  src="images/House_Door_Door.svg"
+                  alt="house door icon" /></span
+              >Wow a door</label
+            >
+            <input type="radio" id="radio-i3" name="tabs" />
+            <label class="tab" for="radio-i3"
+              ><span
+                ><img
+                  class="rc--icon"
+                  src="images/shopping_cart.svg"
+                  alt="shopping cart icon" /></span
+              >Now a shopping cart</label
+            >
+            <span class="glider"></span>
+          </div>
+        </div>
+
+        <div class="tabs-container">
+          <div class="tabs tabs--t4">
+            <input type="radio" id="radio-t4-1" name="tabs" checked />
+            <label class="tab" for="radio-t4-1">Tab</label>
+            <input type="radio" id="radio-t4-2" name="tabs" />
+            <label class="tab" for="radio-t4-2">Tab</label>
+            <input type="radio" id="radio-t4-3" name="tabs" />
+            <label class="tab" for="radio-t4-3">Tab</label>
+            <input type="radio" id="radio-t4-4" name="tabs" />
+            <label class="tab" for="radio-t4-4">Tab</label>
+            <span class="glider"></span>
+          </div>
+        </div>
+
+        <div class="tabs-container">
+          <div class="tabs tabs--t5">
+            <input type="radio" id="radio-t5-1" name="tabs" checked />
+            <label class="tab" for="radio-t5-1">Tab</label>
+            <input type="radio" id="radio-t5-2" name="tabs" />
+            <label class="tab" for="radio-t5-2">Tab</label>
+            <input type="radio" id="radio-t5-3" name="tabs" />
+            <label class="tab" for="radio-t5-3">Tab</label>
+            <input type="radio" id="radio-t5-4" name="tabs" />
+            <label class="tab" for="radio-t5-4">Tab</label>
+            <input type="radio" id="radio-t5-5" name="tabs" />
+            <label class="tab" for="radio-t5-5">Tab</label>
+            <span class="glider"></span>
+          </div>
+        </div>
+
+        <div class="tabs-container">
+          <div class="tabs tabs--t6">
+            <input type="radio" id="radio-t6-1" name="tabs" checked />
+            <label class="tab" for="radio-t6-1">Tab</label>
+            <input type="radio" id="radio-t6-2" name="tabs" />
+            <label class="tab" for="radio-t6-2">Tab</label>
+            <input type="radio" id="radio-t6-3" name="tabs" />
+            <label class="tab" for="radio-t6-3">Tab</label>
+            <input type="radio" id="radio-t6-4" name="tabs" />
+            <label class="tab" for="radio-t6-4">Tab</label>
+            <input type="radio" id="radio-t6-5" name="tabs" />
+            <label class="tab" for="radio-t6-5">Tab</label>
+            <input type="radio" id="radio-t6-6" name="tabs" />
+            <label class="tab" for="radio-t6-6">Tab</label>
+            <span class="glider"></span>
+          </div>
+        </div>
+
+        <div>
+          <h3>Works great for mobile too!</h3>
+        </div>
+        <div class="tabs-container">
+          <div class="tabs tabs--icon-only">
+            <input type="radio" id="radio-io1" name="tabs" checked />
+            <label class="tab" for="radio-io1"
+              ><span
+                ><img
+                  class="rc--icon"
+                  src="images/house-door.svg"
+                  alt="house icon" /></span
+            ></label>
+            <input type="radio" id="radio-io2" name="tabs" />
+            <label class="tab" for="radio-io2"
+              ><span
+                ><img
+                  class="rc--icon"
+                  src="images/search.svg"
+                  alt="search icon" /></span
+            ></label>
+            <input type="radio" id="radio-io3" name="tabs" />
+            <label class="tab" for="radio-io3"
+              ><span
+                ><img
+                  class="rc--icon"
+                  src="images/heart.svg"
+                  alt="heart icon" /></span
+            ></label>
+            <input type="radio" id="radio-io4" name="tabs" />
+            <label class="tab" for="radio-io4"
+              ><span
+                ><img
+                  class="rc--icon"
+                  src="images/ProfileAccount_icon.svg"
+                  alt="User profile icon" /></span
+            ></label>
+            <span class="glider"></span>
+          </div>
         </div>
       </div>
     </section>
