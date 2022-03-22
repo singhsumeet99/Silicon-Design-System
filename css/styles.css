@@ -87,7 +87,8 @@ h3 {
   grid-template-columns: repeat(4, 250px);
 }
 
-.hehe {
+.hehe,
+.hehe--input {
   display: grid;
   grid-template-columns: repeat(3, minmax(10rem, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
@@ -107,6 +108,48 @@ h3 {
   gap: 10px;
 }
 
+@media screen and (max-width: 769px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 6rem 8rem;
+  }
+  .hehe {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  }
+  .hehe--input {
+    grid-template-columns: repeat(1, minmax(20rem, 1fr));
+    gap: 30px;
+  }
+  .hehe--file {
+    grid-template-columns: repeat(1, minmax(10rem, 1fr));
+    transform: scale(0.9);
+  }
+  .hehe--tab {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hehe,
+  .hehe--input {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  }
+  .hehe--file {
+    grid-template-columns: repeat(1, minmax(10rem, 1fr));
+    transform: scale(0.9);
+  }
+}
 /* Buttons */
 .buttons {
   align-items: center;
@@ -543,7 +586,9 @@ input[type="checkbox"]:checked::after {
 }
 
 /* Dropdowns */
-
+.dropdown-menu {
+  position: relative;
+}
 .drop--btn {
   background: #323347;
   border: 0;
@@ -553,15 +598,29 @@ input[type="checkbox"]:checked::after {
   width: 256px;
   outline: 0;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.drop-toggler {
+  transition: transform 0.3s;
+  transform: rotate(180deg);
 }
 .drop--btn:hover {
   background: #3e405b;
 }
 .dropdown-menu__content {
+  width: 100%;
   height: 0;
   opacity: 0;
+  overflow: hidden;
+  position: absolute;
   background-color: #3e405b;
   width: 256px;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
 }
 
 .dropdown-menu__content a {
@@ -575,12 +634,19 @@ input[type="checkbox"]:checked::after {
   border-radius: 8px;
 }
 
-.dropdown-menu:focus .dropdown-menu__content {
-  height: 300px;
+.drop--btn:focus + .dropdown-menu__content {
+  height: auto;
+  opacity: 1;
 }
 
-.dropdown-menu:focus .drop--btn {
-  background-color: #3e405b;
+.drop--btn:focus {
+  pointer-events: none;
+}
+.drop--btn:focus {
+  background: #6e71985d;
+}
+.drop--btn:focus .drop-toggler {
+  transform: rotate(0);
 }
 
 .dropdown {
