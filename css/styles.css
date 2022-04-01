@@ -59,7 +59,7 @@ body {
 
 a {
   text-decoration: none;
-  whitespace: nowrap;
+  white-space: nowrap;
 }
 .container {
   padding: 6rem 10rem;
