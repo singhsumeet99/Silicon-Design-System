@@ -165,7 +165,6 @@ h3 {
   width: 186px;
   border: 0;
   outline: 0;
-  white-space: nowrap;
   transition: ease-out all 150ms;
 }
 
