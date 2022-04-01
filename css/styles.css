@@ -59,6 +59,7 @@ body {
 
 a {
   text-decoration: none;
+  whitespace: nowrap;
 }
 .container {
   padding: 6rem 10rem;
